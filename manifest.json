@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Borderly",
+  "version": "1.0",
+
+  "description": "Adds a border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/borderly.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["borderly.js"]
+    }
+  ]
+}
